@@ -131,10 +131,10 @@ html, body, [class*="css"] {
 
 /* Streamlit 위젯 오버라이드 */
 .stTextInput > div > div > input {
-    background: rgba(255,255,255,0.08) !important;
-    border: 1px solid rgba(255,255,255,0.2) !important;
+    background: rgba(255,255,255,0.85) !important;
+    border: 1px solid rgba(255,255,255,0.4) !important;
     border-radius: 10px !important;
-    color: #ffffff !important;
+    color: #111111 !important;
     font-family: 'Inter', sans-serif !important;
 }
 
@@ -145,10 +145,10 @@ html, body, [class*="css"] {
 }
 
 .stNumberInput > div > div > input {
-    background: rgba(255,255,255,0.08) !important;
-    border: 1px solid rgba(255,255,255,0.2) !important;
+    background: rgba(255,255,255,0.85) !important;
+    border: 1px solid rgba(255,255,255,0.4) !important;
     border-radius: 10px !important;
-    color: #ffffff !important;
+    color: #111111 !important;
 }
 
 .stButton > button {
