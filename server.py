@@ -25,8 +25,10 @@ def get_weather(city: str) -> str:
         city (str): 영문 도시 이름 (예: Seoul, London)
     """
     try:
-        # API 키 없이 사용할 수 있는 공개 날씨 API (wttr.in)
-        url = f"https://wttr.in/{city}?format=j1"
+        import urllib.parse
+        # 한글 도시 이름도 인식할 수 있도록 URL 인코딩 적용
+        encoded_city = urllib.parse.quote(city)
+        url = f"https://wttr.in/{encoded_city}?format=j1"
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req) as response:
             data = json.loads(response.read().decode())
